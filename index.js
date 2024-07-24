@@ -67,6 +67,7 @@ document.getElementById("submit").addEventListener("click", function () {
     let Pacote = pacoteSelecionado.getAttribute('data-value');
     let valor1 = BotaoSelecionado.getAttribute('data-price');
     let valor2 = pacoteSelecionado.getAttribute('data-price');
+    document.getElementById("menu").style.left = "0";
     let valorTotal = parseInt(valor1) + parseInt(valor2);
     let PedidoPacote = `Pacote ${Pacote}`;
     let Pedido = `Viagem: ${destino}`;
