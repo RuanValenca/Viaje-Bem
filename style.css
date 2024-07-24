@@ -1,0 +1,732 @@
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/Inter-Medium.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter";
+    background-image: linear-gradient(to bottom, #062d26ea, #03a386bd), url(img/rodolfo-puchulu-jGfIzudYK_Q-unsplash.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+header {
+    z-index: 10000;
+    width: 100vw;
+    position: fixed;
+    margin: -8px;
+    background-color: rgb(255, 255, 255);
+    color: #03A386;
+    display: flex;
+}
+
+header h1 {
+    color: #03A386;
+    font-size: 36px;
+    margin-left: 3em;
+    position: relative;
+}
+
+nav {
+    font-size: 12px;
+    position: relative;
+    width: 35vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+}
+
+nav h3 {
+    cursor: pointer;
+}
+
+.subtitletop:hover {
+    border-bottom: 1px solid #03A386;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #03A386;
+}
+
+#abrirMenu {
+    cursor: pointer;
+    left: 2vw;
+    position: absolute;
+    align-self: center;
+    height: 8vh;
+    width: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.shake {
+    animation: shake 0.2s ease-in-out 3;
+}
+
+.linhabtn {
+    position: relative;
+    margin: 5px 0 0 0;
+    height: 10px;
+    border-radius: 20px;
+    width: 40px;
+    background-color: #062D26;
+}
+
+#linhamidbtn {
+    background-color: #03A386;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px black;
+    z-index: 1000;
+    transition: all .2s ease-out;
+    padding: 15px;
+    background: white;
+    left: -340px;
+    top: 0;
+    position: fixed;
+    height: 100%;
+    width: 250px;
+}
+
+#fecharMenu {
+    margin: 0;
+    cursor: pointer;
+    align-self: end;
+    flex-direction: column;
+    display: flex;
+    height: 40px;
+    width: 38px;
+}
+
+.linhabtnFechar {
+    right: 10px;
+    position: relative;
+    margin: 5px 0 0 10px;
+    align-items: center;
+    height: 10px;
+    border-radius: 20px;
+    width: 40px;
+    background-color: #062D26;
+    transform: rotate(45deg);
+}
+
+#linhabtnFechar1 {
+    top: 10px;
+}
+
+#linhabtnFechar2 {
+    background-color: #03A386;
+    bottom: 5px;
+    transform: rotate(135deg);
+}
+
+#loginArea {
+    border-radius: 20px;
+    background: #f1f1f1d0;
+    flex-direction: column;
+    display: flex;
+    margin: 10px auto;
+    width: 80%;
+    height: 180px;
+}
+
+#linhaMenu {
+    top: 25px;
+    position: relative;
+    height: 2px;
+    margin: auto;
+    width: 80%;
+    background: #062D26;
+}
+
+#txtEntrar {
+    bottom: 8px;
+    position: relative;
+    z-index: 10;
+    padding: 5px;
+    background: #f1f1f1;
+    color: #062D26;
+    margin: auto;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+#btnLogin {
+    top: 15px;
+    position: relative;
+}
+
+#btnCadastro {
+    bottom: 10px;
+    position: relative;
+}
+
+.btnEntrar {
+    cursor: pointer;
+    text-align: center;
+    width: 90px;
+    font-weight: normal;
+    border-radius: 30px;
+    padding: 0 10px 3px 10px;
+    height: 17px;
+    font-size: 15px;
+    margin: 15px auto;
+    color: white;
+    background: #062D26;
+
+}
+
+#historico {
+    padding: 0px 15px 15px 15px;
+    height: 350px;
+    margin-top: 10px;
+    background: rgb(206, 206, 206);
+    border-radius: 20px;
+}
+
+#historico h2 {
+    color: rgb(0, 0, 0);
+    text-indent: 10px;
+}
+
+.areaTexto {
+    color: rgb(0, 0, 0);
+    margin: auto auto 10px auto;
+    padding: 5px;
+    border-radius: 20px;
+    height: 80px;
+    width: 97%;
+    background: #f1f1f1d0;
+    font-size: 13px;
+}
+
+.areaTexto p {
+    padding: 5px;
+}
+
+.RetornoPedido {
+    font-weight: normal;
+    bottom: 0px;
+    position: relative;
+    height: 25px;
+    text-indent: 10px;
+}
+
+.RetornoPacote {
+    font-weight: normal;
+    bottom: 25px;
+    position: relative;
+    height: 25px;
+    text-indent: 10px;
+}
+
+#RetornoValor {
+    margin: auto;
+    font-weight: bolder;
+    padding: 10px;
+    text-indent: 10px;
+    color: #000000;
+    border-radius: 20px;
+    background-color: #f1f1f1d0;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #062D26;
+    color: white;
+}
+
+#subtt1 {
+    right: 2vw;
+    position: relative;
+}
+
+#DestinosArea h2 {
+    margin: 110px 0px 0px 150px;
+}
+
+#Default {
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    margin: 5px 0 0 0;
+    background-image: linear-gradient(to right, #79a39c4f, #9ebdb865, #96b1abc2), url(img/2CcIDh2OXWmy0meACk4uYO.jpg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+}
+
+.InfoSlide {
+    text-align: justify;
+    left: 72%;
+    width: 15vw;
+    height: 30vh;
+    position: relative;
+    display: static;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.continent {
+    margin: 0;
+    position: relative;
+    top: 10px;
+    font-size: smaller;
+}
+
+.price {
+    font-size: smaller;
+    bottom: 10vh;
+    left: 0px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    color: #03A386;
+}
+
+.slides {
+    left: 9.5vw;
+    align-content: center;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    height: 60vh;
+    width: 79vw;
+    background-image: linear-gradient(to right, #10b3980c, #136458b2, #063f33);
+    background-size: cover;
+    display: none;
+}
+
+#slideAUS {
+    position: relative;
+    margin: 5px 0 0 0;
+    background-image: linear-gradient(to right, #10b3980c, #136458b2, #063f33), url(img/Australia.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#slideESP {
+    position: relative;
+    margin: 5px 0 0 0;
+    background-image: linear-gradient(to right, #10b3980c, #136458b2, #063f33), url(img/espanha.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+#slideFRA {
+    position: relative;
+    margin: 5px 0 0 0;
+    background-image: linear-gradient(to right, #10b3980c, #136458b2, #063f33), url(img/torre-eiffel);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#slideITA {
+    position: relative;
+    margin: 5px 0 0 0;
+    background-image: linear-gradient(to right, #10b3980c, #136458b2, #063f33), url(img/coliseu.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#MudarDestino {
+    margin: 4% auto auto auto;
+    width: 45vw;
+    justify-content: space-between;
+    display: flex;
+}
+
+.destinosbtns {
+    text-indent: -9999px;
+    border: 1px;
+    filter: grayscale(0.4);
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 5px;
+    height: 7vh;
+    width: 5vw;
+    background-color: #062D26;
+    transition: transform linear .1s, filter linear .1s;
+}
+
+.destinosbtns:hover {
+    transform: scale(1.1);
+}
+
+.selecionado {
+    border: 1px solid white;
+}
+
+#bandITA {
+    background-image: url(img/bandItalia.png);
+}
+
+#bandESP {
+    background-image: url(img/bandEspanha.png);
+}
+
+#bandFRA {
+    background-image: url(img/bandFrança.webp);
+}
+
+#bandAUS {
+    background-image: url(img/bandAustralia.svg);
+}
+
+#subtt2 {
+    top: 10px;
+    left: 9.5vw;
+    position: relative;
+    margin-top: 20vh;
+}
+
+#PacoteArea {
+    position: relative;
+    margin: 0 0 10vh 0;
+    justify-content: space-evenly;
+    flex-direction: row;
+    display: flex;
+}
+
+.Pacote {
+    height: 40vh;
+    width: 35vw;
+}
+
+.pctSelecionado {
+    border: 1px solid white;
+}
+
+#PacotePremium {
+    cursor: pointer;
+    background-image: linear-gradient(to left, #16776559, #062D26), url(img/BANNER-TEM-IR-SETE-MARAVILHA-MUNDO-123MILHAS.jpg);
+    background-size: cover;
+
+}
+
+.Info {
+    list-style: none;
+    font-size: 1rem;
+    color: white;
+}
+
+#Info2 {
+    width: 380px;
+    margin-top: 15px;
+}
+
+#PacoteBasic {
+    cursor: pointer;
+    background-image: linear-gradient(to left, #1677655b, #062d26), url(img/portofino_blog01-mar22_grecia.webp);
+    background-size: cover;
+
+}
+
+.titleArea {
+    z-index: 10;
+    color: #062D26;
+    font-size: 18px;
+    font-weight: bolder;
+    text-indent: 30px;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    height: 25%;
+    background-color: white;
+}
+
+.titleArea p {
+    margin-top: 25px;
+}
+
+#submit {
+    height: 9vh;
+    width: 9vw;
+    position: relative;
+    margin: auto auto 15vh auto;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    font-size: large;
+    color: white;
+    background-color: #062D26;
+    padding: 5px;
+    transition: all 0.1s linear;
+}
+
+footer {
+    flex-direction: row;
+    display: flex;
+    height: 60vh;
+    margin: -8px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+#sideLeft {
+    text-indent: 7vw;
+    flex-direction: column;
+    display: flex;
+    width: 60vw;
+}
+
+#titulo2 {
+    margin-top: 10vh;
+}
+
+#imgs {
+    margin-top: 3vh;
+    width: 20vw;
+    position: static;
+}
+
+#img1 {
+    margin-right: 2vw;
+    height: 11vh;
+    width: 5vw;
+}
+
+#img2 {
+    height: 11vh;
+    width: 5vw;
+}
+
+#tituloFooter {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    border: 1px solid red;
+    margin: 15vh 15vh 0 0;
+}
+
+#tituloFooter h1 {
+    text-align: center;
+    display: block;
+    width: 30vw;
+    color: #03A386;
+    font-size: 3rem;
+    position: relative;
+}
+
+#credito{
+    margin: 10vh auto auto 60%;
+    text-wrap: nowrap;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-image: linear-gradient(to bottom, #11574a, #03A386);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 50px;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotateZ(0deg)
+    }
+
+    25% {
+        transform: rotateZ(5deg)
+    }
+
+    50% {
+        transform: rotateZ(0deg)
+    }
+
+    75% {
+        transform: rotateZ(-5deg)
+    }
+
+    100% {
+        transform: rotateZ(0deg)
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        text-wrap: nowrap;
+        margin-left: 30vw;
+        position: relative;
+        font-size: 1.5rem;
+    }
+
+    nav {
+        height: 10vh;
+    }
+
+    nav h3 {
+        position: relative;
+        left: 1000px;
+        display: none;
+    }
+
+    #abrirMenu {
+        top: 2vh;
+        left: 4vw;
+        height: 8vh;
+        width: 3vw;
+    }
+
+    .linhabtn {
+        height: 8px;
+        width: 30px;
+    }
+
+    .areaTexto {
+        font-size: 12px;
+    }
+
+    .subtitle{
+        font-size: 1rem;
+        padding: 5px;
+    }
+    
+    #subtt1{
+        right: 43vw;
+    }
+
+    #subtt2{
+        margin-top: 10vh;
+        left: 20px;
+    }
+
+    .slides{
+        left: 7vw;
+    }
+
+    .InfoSlide{
+        left: 10%;
+        font-size: 1.5rem;
+    }
+
+    .price{
+        bottom: 10vh;
+        font-size: 1rem;
+        width: 30vw;
+        padding: 3px;
+    }
+
+    #MudarDestino{
+        width: 80vw;
+        margin-right: auto;
+        justify-content: space-between ;
+    }
+
+    .destinosbtns{
+        width: 15vw;
+        height: 5vh;
+    }
+
+    #PacoteArea{
+        margin: auto;
+        width: 80vw;
+        flex-direction: column;
+    }
+
+    .Pacote{
+        height: 25vh;
+        width: 80vw;
+    }
+
+    .Info{
+        font-size: 0.7rem;
+    }
+
+    #Info2{
+        width: 60vw;
+    }
+
+    .titleArea{
+        font-size: 1rem;
+    }
+
+    #PacoteBasic{
+        margin-top: 5vh;
+    }
+
+    .pctSelecionado{
+        transform: scale(1.02);
+    }
+
+    #submit{
+        margin-top: 20px;
+        height: 5vh;
+        width: 70vw;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    #titulo2{
+        font-size: 1.3rem;
+        margin-top: 5vh;
+    }
+
+    #sideLeft{
+        margin: auto 15px;
+        width: 80vw;
+        font-size: 0.7rem;
+        text-indent: 0vw;
+    }
+
+    #imgs{
+        display:flex;
+        flex-direction: row;
+    }
+
+    #img1, #img2{
+        width: 14vw;
+        height: 7vh;
+    }
+
+    #tituloFooter h1{
+        left: 34vw;
+        bottom: 33vh;
+        position: relative;
+        margin: auto;
+        border: 1px solid red;
+        font-size: 1.1rem;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        display: none;
+    }
+
+}

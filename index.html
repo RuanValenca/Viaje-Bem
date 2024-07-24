@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje Bem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Viaje Bem</h1>
+        <nav>
+            <h3 class="subtitletop"><a href="#subtt1">Destinos</a></h3>
+            <h3 class="subtitletop"><a href="#MudarDestino">Pacotes</a></h3>
+            <h3 class="subtitletop"><a href="#tituloFooter">Contato</a></h3>
+        </nav>
+        <b id="abrirMenu">
+            <div class=" linhabtn"></div>
+            <div class=" linhabtn" id="linhamidbtn"></div>
+            <div class=" linhabtn"></div>
+        </b>
+
+        <div id="menu">
+            <b id="fecharMenu">
+                <div class="linhabtnFechar" id="linhabtnFechar1"></div>
+                <div class="linhabtnFechar" id="linhabtnFechar2"></div>
+            </b>
+
+            <div id="loginArea">
+                <b id="btnLogin" class="btnEntrar">Login</b>
+                <hr id="linhaMenu">
+                <p id="txtEntrar">ou</p>
+                <b id="btnCadastro" class="btnEntrar">Cadastro</b>
+            </div>
+
+            <div id="historico">
+                <h2>Carrinho</h2>
+                <div class="areaTexto">
+                    <p class="RetornoPedido"></p>
+                    <p class="RetornoPacote"></p>
+                    <p id="RetornoValor"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div id="DestinosArea">
+            <h2 class="subtitle" id="subtt1">Destinos</h2>
+            <div class="slides" id="Default"></div>
+        </div>
+
+        <div class="slides" id="slideAUS">
+            <p class="InfoSlide" id="InfoSlideAUS">Sydney, Austrália <br> <span class="continent">Oceania</span>
+                <br><br>
+                <br><br>
+                <span class="price">R$7.500</span>
+            </p>
+        </div>
+
+        <div class="slides" id="slideESP">
+            <p class="InfoSlide" id="InfoSlideESP">Madrid, Espanha <br> <span class="continent">Europa</span> <br><br>
+
+                <br><br>
+                <span class="price">R$4.500</span>
+            </p>
+        </div>
+
+        <div class="slides" id="slideFRA">
+            <p class="InfoSlide" id="InfoSlideFRA">Paris, França <br> <span class="continent">Europa</span> <br><br>
+
+                <br><br>
+                <span class="price">R$5.000</span>
+            </p>
+        </div>
+
+        <div class="slides" id="slideITA">
+            <p class="InfoSlide" id="InfoSlideITA">Roma, Itália <br> <span class="continent">Europa</span> <br><br>
+
+                <br><br>
+                <span class="price">R$5.500</span>
+            </p>
+        </div>
+    </section>
+
+    <div id="MudarDestino">
+        <input data-price="5500" type="button" value="Itália, Roma" name="Destino" class="destinosbtns" id="bandITA">
+
+        <input data-price="4500" type="button" value="Espanha, Madrid" name="Destino" class="destinosbtns" id="bandESP">
+
+        <input data-price="5000" type="button" value="França, Paris" name="Destino" class="destinosbtns" id="bandFRA">
+
+        <input data-price="7500" type="button" value="Austrália, Sydney" name="Destino" class="destinosbtns"
+            id="bandAUS">
+    </div>
+
+
+    <h2 class="subtitle" id="subtt2">Pacotes</h2>
+
+    <section id="PacoteArea">
+        <div data-value="Aventura" data-price="500" class="Pacote" id="PacotePremium">
+            <div class="titleArea">
+                <p>Pacote Aventura</p>
+            </div>
+
+            <ul class="Info">
+                <li>Inclui trilhas, esportes radicais, e passeios ecológicos.
+                </li><br>
+                <li>Descontos em equipamentos de aventura e guias especializados.
+                </li>
+                <p>R$500</p>
+            </ul>
+        </div>
+
+        <div data-value="Cultural" data-price="600" class="Pacote" id="PacoteBasic">
+            <div class="titleArea">
+                <p>Pacote Cultural</p>
+            </div>
+
+            <ul class="Info" id="Info2">
+                <li>Inclui ingressos para galerias de arte e exposições.
+                </li><br>
+                <li>Aulas de arte e oficinas de artesanato com artistas locais.</li>
+                <p id="precoInfo2">R$600</p>
+            </ul>
+        </div>
+    </section>
+
+    <input onmousedown="clicado()" onmouseup="solto()" id="submit" type="button" value="Comprar">
+
+    <footer>
+        <div id="sideLeft">
+            <h1 id="titulo2">Entre em Contato</h1>
+            <p>Ruan Valença - Desenvolvedor Front-End. Entre em contato nas redes abaixo</p>
+            <div id="imgs">
+                <a target="_blank" href="https://github.com/RuanValenca"><img id="img1"
+                        src="img/github-icon-2048x2048-qlv5m092.png" alt="githubIcon"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/ruanvalenca/"><img id="img2"
+                        src="img/linkedin vazio.webp" alt="LinkedinIcon"></a>
+            </div>
+            <p id="credito">©Ruan Valença - 2024</p>
+        </div>
+
+        <div id="tituloFooter">
+            <h1>Viaje Bem</h1>
+        </div>
+
+        <script src="index.js"></script>
+</body>
+
+</html>
