@@ -568,6 +568,10 @@ footer {
         font-size: 2rem;
     }
 
+    header{
+        height: 10vh;
+    }
+
     nav {
         height: 10vh;
     }
@@ -608,6 +612,10 @@ footer {
     #subtt2{
         margin-top: 15vh;
         margin-left: calc(50vw - 90px);
+    }
+
+    #Default{
+        background-position-x: 20%;
     }
 
     .slides{
@@ -686,15 +694,17 @@ footer {
     }
 
     #sideLeft{
-        margin: auto 15px;
-        width: 80vw;
+        height: 30vh;
+        margin: 10px 25px;
+        width: 85vw;
         font-size: 1rem;
         text-indent: 0vw;
     }
 
     #itensFooter{
-        margin-top: 20%;
-        display:flex;
+        width: 23vw;
+        margin: 10% auto;
+        display:inline-flex;
         flex-direction: row;
     }
 
@@ -704,10 +714,9 @@ footer {
     }
 
     #creditoBox{
-        margin: 0;
+        margin: 0 auto;
         width: 30vw;
         font-size: 0.6rem;
-        left: calc(50% - 15vw);
         position: relative;
     }
 
