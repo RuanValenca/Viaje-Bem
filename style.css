@@ -516,17 +516,6 @@ footer {
     width: 5vw;
 }
 
-#creditoBox{
-    font-size: 1rem;
-    display: flex;
-    margin: calc(60vh - 5vh) 0 0 calc(50vw - 7.5vw);
-    position: absolute;
-    align-items: center;
-    height: 5vh;
-    width: 15vw;
-
-}
-
 ::-webkit-scrollbar {
     width: 7px;
     background-image: linear-gradient(to bottom, #11574a, #03A386);
@@ -679,12 +668,14 @@ footer {
     }
 
     #submit{
-        margin: 20px auto 20vh calc(50% - 35vw);
+        margin: 20px auto 10vh calc(50% - 35vw);
         height: 5vh;
         width: 70vw;
     }
 
     footer{
+        height: 40vh;
+        margin-top: 5vh;
         flex-direction: column;
     }
 
@@ -703,7 +694,7 @@ footer {
 
     #itensFooter{
         width: 23vw;
-        margin: 10% auto;
+        margin: 10% auto 0 auto;
         display:inline-flex;
         flex-direction: row;
     }
@@ -713,11 +704,9 @@ footer {
         height: 3em;
     }
 
-    #creditoBox{
-        margin: 0 auto;
-        width: 30vw;
-        font-size: 0.6rem;
-        position: relative;
+    #credito{
+        width: 45vw;
+        margin: auto auto 0 auto;
     }
 
     ::-webkit-scrollbar {
