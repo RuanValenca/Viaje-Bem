@@ -480,7 +480,7 @@ nav a {
 }
 
 footer {
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
     height: 60vh;
     margin: -8px;
@@ -514,6 +514,12 @@ footer {
 #img2 {
     height: 11vh;
     width: 5vw;
+}
+
+#credito{
+    margin: auto auto 0 auto;
+    display: block;
+    height: fit-content;
 }
 
 ::-webkit-scrollbar {
